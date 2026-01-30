@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Bank Account Details</h2>
+
+<script>
+class BankAccount {
+  constructor(name, accNo, balance) {
+    this.name = name;
+    this.accNo = accNo;
+    this.balance = balance;
+  }
+
+  deposit(amount) {
+    this.balance += amount;
+  }
+
+  withdraw(amount) {
+    this.balance -= amount;
+  }
+
+  display() {
+    document.write("Name: " + this.name + "<br>");
+    document.write("Account No: " + this.accNo + "<br>");
+    document.write("Balance: " + this.balance + "<br>");
+  }
+}
+
+
+let name = prompt("Enter Account Holder Name");
+let accNo = parseInt(prompt("Enter Account Number"));
+let balance = parseInt(prompt("Enter Initial Balance"));
+
+let acc = new BankAccount(name, accNo, balance);
+
+let dep = parseInt(prompt("Enter Deposit Amount"));
+acc.deposit(dep);
+
+let wit = parseInt(prompt("Enter Withdraw Amount"));
+acc.withdraw(wit);
+
+acc.display();
+</script>
+
+</body>
+</html>

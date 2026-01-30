@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Sequence</title>
+</head>
+<body>
+
+<h2>Fibonacci Sequence</h2>
+
+<script>
+    let n = Number(prompt("Enter number of terms:"));
+
+    let a = 0, b = 1, next;
+
+    document.write(a + "<br>");
+    document.write(b + "<br>");
+
+    for (let i = 3; i <= n; i++) {
+        next = a + b;
+        document.write(next + "<br>");
+        a = b;
+        b = next;
+    }
+</script>
+
+</body>
+</html>

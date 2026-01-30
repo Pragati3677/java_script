@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Card</title>
+</head>
+<body>
+
+<h2>Student Grade Card</h2>
+
+<script>
+
+    let name = prompt("Enter Student Name:");
+    let rollNo = prompt("Enter Roll Number:");
+
+    let sub1 = Number(prompt("Enter marks of Subject 1:"));
+    let sub2 = Number(prompt("Enter marks of Subject 2:"));
+    let sub3 = Number(prompt("Enter marks of Subject 3:"));
+
+    let total = sub1 + sub2 + sub3;
+    let percentage = total / 3;
+
+    let grade;
+    if (percentage >= 75) {
+        grade = "A";
+    } else if (percentage >= 60) {
+        grade = "B";
+    } else if (percentage >= 40) {
+        grade = "C";
+    } else {
+        grade = "Fail";
+    }
+
+    document.write("Name: " + name + "<br>");
+    document.write("Roll No: " + rollNo + "<br><br>");
+
+    document.write("Subject 1: " + sub1 + "<br>");
+    document.write("Subject 2: " + sub2 + "<br>");
+    document.write("Subject 3: " + sub3 + "<br><br>");
+
+    document.write("Total Marks: " + total + "<br>");
+    document.write("Percentage: " + percentage.toFixed(2) + "%<br>");
+    document.write("Grade: " + grade);
+</script>
+
+</body>
+</html>

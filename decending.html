@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Three Numbers</title>
+</head>
+<body>
+
+<h2>Sort Three Numbers in Descending Order</h2>
+
+<script>
+    function sortDescending(a, b, c) {
+        let arr = [a, b, c];
+        arr.sort(function(x, y) {
+            return y - x;   
+        });
+        return arr;
+    }
+
+    let num1 = Number(prompt("Enter first number:"));
+    let num2 = Number(prompt("Enter second number:"));
+    let num3 = Number(prompt("Enter third number:"));
+
+    let result = sortDescending(num1, num2, num3);
+
+    document.write("Numbers in Descending Order: " + result.join(", "));
+</script>
+
+</body>
+</html>

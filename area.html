@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+class Rectangle {
+  constructor(l, b) {
+    this.length = l;
+    this.breadth = b;
+  }
+
+  area() {
+    return this.length * this.breadth;
+  }
+}
+
+let l = parseInt(prompt("Enter length"));
+let b = parseInt(prompt("Enter breadth"));
+
+let r = new Rectangle(l, b);
+document.write("Area of Rectangle = " + r.area());
+</script>
+
+</body>
+</html>

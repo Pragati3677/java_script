@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electricity Bill</title>
+</head>
+<body>
+
+<h2>Electricity Bill Generator</h2>
+
+<script>
+    
+    let name = prompt("Enter Consumer Name:");
+    let units = Number(prompt("Enter units consumed:"));
+
+    let rate = 5;
+    let billAmount;
+
+    
+    if (units > 50) {
+        billAmount = units * rate * 2;   
+    } else {
+        billAmount = units * rate;       
+    }
+
+    document.write("Consumer Name: " + name + "<br>");
+    document.write("Units Consumed: " + units + "<br>");
+    document.write("Charge per Unit: ₹" + rate + "<br>");
+    document.write("Total Bill Amount: ₹" + billAmount);
+</script>
+
+</body>
+</html>

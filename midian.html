@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Min Median Max</title>
+</head>
+<body>
+
+<h2>Find Min, Median and Max</h2>
+
+<script>
+    function findMinMedianMax(a, b, c) {
+        let min, mid, max;
+
+        // Find minimum
+        if (a <= b && a <= c) {
+            min = a;
+        } else if (b <= a && b <= c) {
+            min = b;
+        } else {
+            min = c;
+        }
+
+        if (a >= b && a >= c) {
+            max = a;
+        } else if (b >= a && b >= c) {
+            max = b;
+        } else {
+            max = c;
+        }
+
+        mid = a + b + c - min - max;
+
+        document.write("Minimum: " + min + "<br>");
+        document.write("Median: " + mid + "<br>");
+        document.write("Maximum: " + max + "<br>");
+    }
+
+    let x = Number(prompt("Enter first number:"));
+    let y = Number(prompt("Enter second number:"));
+    let z = Number(prompt("Enter third number:"));
+
+    findMinMedianMax(x, y, z);
+</script>
+
+</body>
+</html>
