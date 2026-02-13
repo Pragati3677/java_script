@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Validation</title>
+<script>
+function validateImage() {
+    var img = document.getElementById("image").value;
+    var allowed = /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+
+    if (img == "") {
+        alert("Please select an image");
+        return false;
+    }
+    if (!allowed.exec(img)) {
+        alert("Only image files allowed (jpg, jpeg, png, gif)");
+        return false;
+    }
+    alert("Valid Image");
+    return true;
+}
+</script>
+</head>
+
+<body>
+<h3>Image Validation</h3>
+<form onsubmit="return validateImage()">
+    Select Image: <input type="file" id="image">
+    <br><br>
+    <input type="submit" value="Upload">
+</form>
+</body>
+</html>

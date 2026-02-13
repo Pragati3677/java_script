@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Focus & Blur</title>
+</head>
+<body>
+
+<label>Enter Name:</label>
+<input type="text" 
+       onfocus="showMessage('Cursor entered the input field')" 
+       onblur="showMessage('Cursor left the input field')">
+
+<p id="msg"></p>
+
+<script>
+    function showMessage(message) {
+        document.getElementById("msg").innerText = message;
+    }
+</script>
+
+</body>
+</html>

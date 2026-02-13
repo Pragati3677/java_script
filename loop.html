@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Loops</title>
+</head>
+<body>
+
+<h2>1. for Loop</h2>
+<script>
+for (let i = 1; i <= 5; i++) {
+    document.write(i + " ");
+}
+</script>
+
+<hr>
+
+<h2>2. while Loop</h2>
+<script>
+let j = 1;
+while (j <= 5) {
+    document.write(j + " ");
+    j++;
+}
+</script>
+
+<hr>
+
+<h2>3. do...while Loop</h2>
+<script>
+let k = 1;
+do {
+    document.write(k + " ");
+    k++;
+} while (k <= 5);
+</script>
+
+<hr>
+
+<h2>4. for...in Loop (Object)</h2>
+<script>
+let student = {name: "Pragati", age: 20, branch: "CSE"};
+
+for (let key in student) {
+    document.write(key + " : " + student[key] + "<br>");
+}
+</script>
+
+<hr>
+
+<h2>5. for...of Loop (Array)</h2>
+<script>
+let colors = ["Red", "Green", "Blue"];
+
+for (let color of colors) {
+    document.write(color + "<br>");
+}
+</script>
+
+<hr>
+
+<h2>6. break Statement</h2>
+<script>
+for (let i = 1; i <= 5; i++) {
+    if (i == 3) {
+        break;
+    }
+    document.write(i + " ");
+}
+</script>
+
+<hr>
+
+<h2>7. continue Statement</h2>
+<script>
+for (let i = 1; i <= 5; i++) {
+    if (i == 3) {
+        continue;
+    }
+    document.write(i + " ");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Color on Key Press</title>
+</head>
+<body>
+
+<h2>Press any key</h2>
+
+<script>
+    document.addEventListener("keydown", function () {
+        const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        document.body.style.backgroundColor = randomColor;
+    });
+</script>
+
+</body>
+</html>

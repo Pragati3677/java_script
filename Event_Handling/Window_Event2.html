@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Window Resize</title>
+</head>
+<body>
+
+<h3>Resize the browser window</h3>
+
+<p>Width: <span id="width"></span> px</p>
+<p>Height: <span id="height"></span> px</p>
+
+<script>
+    function showSize() {
+        document.getElementById("width").innerText = window.innerWidth;
+        document.getElementById("height").innerText = window.innerHeight;
+    }
+
+    // Initial display
+    showSize();
+
+    // Update on resize
+    window.addEventListener("resize", showSize);
+</script>
+
+</body>
+</html>

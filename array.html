@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Array Programs</title>
+</head>
+<body>
+
+<h2>1. Create and Display Array</h2>
+<script>
+let fruits = ["Apple", "Banana", "Mango"];
+document.write(fruits + "<br>");
+</script>
+
+<hr>
+
+<h2>2. Access Array Elements</h2>
+<script>
+document.write("First Fruit: " + fruits[0] + "<br>");
+document.write("Second Fruit: " + fruits[1] + "<br>");
+</script>
+
+<hr>
+
+<h2>3. Array Length</h2>
+<script>
+document.write("Array Length: " + fruits.length);
+</script>
+
+<hr>
+
+<h2>4. Loop Through Array (for loop)</h2>
+<script>
+for (let i = 0; i < fruits.length; i++) {
+    document.write(fruits[i] + "<br>");
+}
+</script>
+
+<hr>
+
+<h2>5. Add Element (push)</h2>
+<script>
+fruits.push("Orange");
+document.write(fruits);
+</script>
+
+<hr>
+
+<h2>6. Remove Last Element (pop)</h2>
+<script>
+fruits.pop();
+document.write(fruits);
+</script>
+
+<hr>
+
+<h2>7. for...of Loop with Array</h2>
+<script>
+for (let fruit of fruits) {
+    document.write(fruit + "<br>");
+}
+</script>
+
+<hr>
+
+<h2>8. Sort Array</h2>
+<script>
+fruits.sort();
+document.write(fruits);
+</script>
+
+<hr>
+
+<h2>9. Reverse Array</h2>
+<script>
+fruits.reverse();
+document.write(fruits);
+</script>
+
+</body>
+</html>

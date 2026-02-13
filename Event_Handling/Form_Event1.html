@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Change Alert</title>
+</head>
+<body>
+
+<label>Select a course:</label>
+<select onchange="showAlert()">
+    <option value="">--Select--</option>
+    <option value="java">Java</option>
+    <option value="python">Python</option>
+    <option value="javascript">JavaScript</option>
+</select>
+
+<script>
+    function showAlert() {
+        alert("You changed the selected option!");
+    }
+</script>
+
+</body>
+</html>
